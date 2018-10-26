@@ -1,0 +1,35 @@
+{
+  "name": "next-boilerplate",
+  "version": "0.1.0",
+  "description": "simple boilerplate for next.js",
+  "scripts": {
+    "eslint": "eslint src/ --fix",
+    "test": "npm run eslint",
+    "dev": "next ./src -p 3000",
+    "export": "next build ./src && next export ./src -o .statichtml/"
+  },
+  "author": "thundermiracle",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^3.3.1",
+    "@material-ui/icons": "^3.0.1",
+    "next": "^7.0.2",
+    "next-mui-helper": "^1.1.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-import-resolver-babel-module": "^5.0.0-beta.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "react-hot-loader": "^4.3.11"
+  }
+}
