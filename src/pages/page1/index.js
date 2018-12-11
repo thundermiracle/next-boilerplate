@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
 import Button from '@material-ui/core/Button';
-import Link from 'next/link';
+import { NextLink } from 'lib/NextRelative';
 
 const Page1 = () => (
   <Fragment>
@@ -9,9 +9,9 @@ const Page1 = () => (
       Hello World Page1!
     </Button>
     <div>
-      <Link href="/page2">
+      <NextLink href="/page2">
         <Button>To Page2</Button>
-      </Link>
+      </NextLink>
     </div>
   </Fragment>
 );

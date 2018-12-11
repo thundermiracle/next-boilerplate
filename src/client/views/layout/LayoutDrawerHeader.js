@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import withStyles from '@material-ui/core/styles/withStyles';
-import Link from 'next/link';
+import { NextLink } from 'lib/NextRelative';
 
 const styles = {
   logo: {
@@ -28,14 +28,14 @@ const LayoutDrawerHeader = (props) => {
   const { classes, packageInfo } = props;
   return (
     <div className={classes.menuTitle}>
-      <Link href="/">
+      <NextLink href="/">
         <div>
           <div className={classes.logo}>
             {packageInfo.name || 'next-boilerplate'}
           </div>
           <div className={classes.titleVersion}>v{packageInfo.version || '0.0.1'}</div>
         </div>
-      </Link>
+      </NextLink>
     </div>
   );
 };

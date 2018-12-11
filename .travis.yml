@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "8"
+
+before_deploy: 
+  - sed -i -- 's/subfolder: false/subfolder: true/g' ./config/client.js
+  - yarn export
+  - echo '' > ./.statichtml/.nojekyll
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_GH
+  # keep-history: true
+  local-dir: ./.statichtml
+  on:
+    branch: master
