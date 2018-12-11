@@ -3,7 +3,7 @@ node_js:
   - "8"
 
 before_deploy: 
-  - sed -i -- 's/subfolder: false/subfolder: true/g' ./config/client.js
+  - sed -i -- 's/subfolder:\ false/subfolder:\ true/g' ./config/client.js
   - yarn export
   - echo '' > ./.statichtml/.nojekyll
 deploy:
