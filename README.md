@@ -10,7 +10,7 @@ The project mainly uses [nextjs](https://github.com/zeit/next.js/), [material-ui
 
 ## Sample github page:
 
-[https://thundermiracle.github.io/next-biolerplate](https://thundermiracle.github.io/next-biolerplate)
+[https://thundermiracle.github.io/next-boilerplate](https://thundermiracle.github.io/next-boilerplate)
 
 ## Settings
 
