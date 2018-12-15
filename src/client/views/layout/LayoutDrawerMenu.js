@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NextLink from 'next/link';
+import { NextLink } from 'lib/NextRelative';
 
 import DrawerMenu from 'components/DrawerMenu';
 

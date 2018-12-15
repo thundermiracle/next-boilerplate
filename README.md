@@ -10,6 +10,8 @@ The project mainly uses [nextjs](https://github.com/zeit/next.js/), [material-ui
 
 ## Settings
 
+### IMPORTANT
+
 + material-ui's theme
 
       src/client/views/styles/theme.js
@@ -33,6 +35,11 @@ The project mainly uses [nextjs](https://github.com/zeit/next.js/), [material-ui
 
       .babelrc
       jsconfig.json
+
++ Deploy to github-pages or into sub folder
+
+      config/client.js [subfolder: true]
+
 
 ## License
 
