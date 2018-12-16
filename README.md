@@ -4,13 +4,15 @@
 
 Simple boilerplate of next.js.
 With material-ui, google analytics, customized export, a simple layout and module-resolver support. And the newest version of babel7 is imported.
+You could deploy it to github pages by travis easily as well.
 
 The project mainly uses [nextjs](https://github.com/zeit/next.js/), [material-ui](https://github.com/mui-org/material-ui) and [next-mui-helper](https://github.com/thundermiracle/next-mui-helper).
 
+## Sample github page:
+
+[https://thundermiracle.github.io/next-biolerplate](https://thundermiracle.github.io/next-biolerplate)
 
 ## Settings
-
-### IMPORTANT
 
 + material-ui's theme
 
