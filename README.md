@@ -14,34 +14,30 @@ The project mainly uses [nextjs](https://github.com/zeit/next.js/), [material-ui
 
 ## Settings
 
-+ material-ui's theme
+- material-ui's theme
 
       src/client/views/styles/theme.js
 
-+ Google Analytics
+- Google Analytics
 
       config/client.js.
 
-+ Customize export
-
-  next.js can export your code to static html which is very easy to deploy. With next.js' default export function, you cannot select which page to include or exclude, but you can do it in this boilerplate.
-
-        src/client/PathMap.js
-        src/next.config.js
-
-+ Layout injection
+- Layout injection
 
       src/_app.js
 
-+ Module resolve
+- Module resolve
 
       .babelrc
       jsconfig.json
 
-+ Deploy to github-pages or into sub folder
+- Deploy to github-pages or into sub folder
 
       config/client.js [subfolder: true]
 
+- Deploy to Netlify
+
+      netlify.toml
 
 ## License
 

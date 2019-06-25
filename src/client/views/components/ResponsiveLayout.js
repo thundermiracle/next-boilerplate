@@ -64,7 +64,7 @@ export const makeResponsiveLayout = (drawerWidth = 240) => {
     content: {
       backgroundColor: theme.palette.background.default,
       width: '100%',
-      padding: theme.spacing.unit * 2,
+      padding: theme.spacing(2),
       height: 'calc(100% - 64px)',
       marginTop: 64,
       overflow: 'auto',
@@ -83,24 +83,32 @@ export const makeResponsiveLayout = (drawerWidth = 240) => {
     };
 
     render() {
-      const { classes, title, drawerHeader, drawerMenu, appbarProps, children, ...restProps } = this.props;
+      const {
+        classes,
+        title,
+        drawerHeader,
+        drawerMenu,
+        appbarProps,
+        children,
+        ...restProps
+      } = this.props;
       const { mobileOpen } = this.state;
 
       const drawer = (
         <div>
-          <div className={classes.drawerHeader}>
-            { drawerHeader }
-          </div>
-          <List>
-            { drawerMenu }
-          </List>
+          <div className={classes.drawerHeader}>{drawerHeader}</div>
+          <List>{drawerMenu}</List>
         </div>
       );
 
       return (
         <div className={classes.root} {...restProps}>
           <div className={classes.appFrame}>
-            <AppBar className={classes.appBar} position="absolute" {...appbarProps}>
+            <AppBar
+              className={classes.appBar}
+              position="absolute"
+              {...appbarProps}
+            >
               <Toolbar>
                 <IconButton
                   color="inherit"
@@ -110,7 +118,12 @@ export const makeResponsiveLayout = (drawerWidth = 240) => {
                 >
                   <MenuIcon />
                 </IconButton>
-                <Typography type="title" color="inherit" noWrap className={classes.title}>
+                <Typography
+                  type="title"
+                  color="inherit"
+                  noWrap
+                  className={classes.title}
+                >
                   {title}
                 </Typography>
                 <ToolbarLinkIcons />
@@ -144,9 +157,7 @@ export const makeResponsiveLayout = (drawerWidth = 240) => {
                 {drawer}
               </Drawer>
             </Hidden>
-            <main className={classes.content}>
-              {children}
-            </main>
+            <main className={classes.content}>{children}</main>
           </div>
         </div>
       );
