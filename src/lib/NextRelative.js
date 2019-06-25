@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import NextLinkOrigin from 'next/link';
 
 const Styles = {
@@ -26,6 +27,10 @@ export const NextLink = ({ href, children, ...restProps }) => {
   );
 };
 
-export const Link = ({ href, ...restProps }) => <link {...restProps} href={`${process.env.SUBFOLDER}${href}`} />;
+export const Link = ({ href, ...restProps }) => (
+  <link {...restProps} href={`${process.env.SUBFOLDER}${href}`} />
+);
 
-export const Img = ({ src, alt, ...restProps }) => <img {...restProps} alt={alt} src={`${process.env.SUBFOLDER}${src}`} />;
+export const Img = ({ src, alt, ...restProps }) => (
+  <img {...restProps} alt={alt} src={`${process.env.SUBFOLDER}${src}`} />
+);
